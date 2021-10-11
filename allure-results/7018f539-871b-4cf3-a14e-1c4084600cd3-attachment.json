@@ -1,0 +1,4 @@
+{
+  "using": "xpath",
+  "value": "//select[@id='id_state']//option[text()='California']"
+}
