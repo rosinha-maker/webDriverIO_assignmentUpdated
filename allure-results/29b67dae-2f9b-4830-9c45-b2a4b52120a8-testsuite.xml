@@ -1,0 +1,135 @@
+<?xml version='1.0'?>
+<ns2:test-suite xmlns:ns2='urn:model.allure.qatools.yandex.ru' start='1634132243108' stop='1634132244446'>
+    <name>Validation of Product details on Payments page after Registering on the website and Adding a product to the cart: Registering on the website</name>
+    <title>Validation of Product details on Payments page after Registering on the website and Adding a product to the cart: Registering on the website</title>
+    <test-cases>
+        <test-case start='1634132243111' status='passed' stop='1634132243118'>
+            <name></name>
+            <title></title>
+            <labels>
+                <label name='language' value='javascript'/>
+                <label name='framework' value='wdio'/>
+                <label name='thread' value='0-0'/>
+            </labels>
+            <parameters>
+                <parameter kind='argument' name='browser' value='chrome-94.0.4606.81'/>
+            </parameters>
+            <steps/>
+            <attachments/>
+        </test-case>
+        <test-case start='1634132243118' status='broken' stop='1634132244440'>
+            <name>Given I'm on the landing page</name>
+            <title>Given I'm on the landing page</title>
+            <labels>
+                <label name='language' value='javascript'/>
+                <label name='framework' value='wdio'/>
+                <label name='thread' value='0-0'/>
+            </labels>
+            <parameters>
+                <parameter kind='argument' name='browser' value='chrome-94.0.4606.81'/>
+            </parameters>
+            <steps>
+                <step start='1634132243129' status='broken' stop='1634132244440'>
+                    <name>POST /session/:sessionId/url</name>
+                    <title>POST /session/:sessionId/url</title>
+                    <attachments>
+                        <attachment title='Request' source='65041f70-6843-460f-94af-92f264a93a35-attachment.json' type='application/json' size='45'/>
+                    </attachments>
+                    <steps/>
+                </step>
+            </steps>
+            <attachments/>
+            <failure>
+                <message>unknown error: net::ERR_INTERNET_DISCONNECTED</message>
+                <stack-trace>unknown error: net::ERR_INTERNET_DISCONNECTED
+                  (Session info: chrome=94.0.4606.81)
+                Backtrace:
+                	Ordinal0 [0x00D3BDE3+2473443]
+                	Ordinal0 [0x00CD6661+2057825]
+                	Ordinal0 [0x00BE2438+1057848]
+                	Ordinal0 [0x00BDF031+1044529]
+                	Ordinal0 [0x00BD5179+1003897]
+                	Ordinal0 [0x00BD5D80+1006976]
+                	Ordinal0 [0x00BD53CA+1004490]
+                	Ordinal0 [0x00BD4AFA+1002234]
+                	Ordinal0 [0x00BD3C8D+998541]
+                	Ordinal0 [0x00BD3F46+999238]
+                	Ordinal0 [0x00BE3A0A+1063434]
+                	Ordinal0 [0x00C3506D+1396845]
+                	Ordinal0 [0x00C256E3+1332963]
+                	Ordinal0 [0x00C34ABF+1395391]
+                	Ordinal0 [0x00C255AB+1332651]
+                	Ordinal0 [0x00C02104+1188100]
+                	Ordinal0 [0x00C02F59+1191769]
+                	GetHandleVerifier [0x00EC2266+1549718]
+                	GetHandleVerifier [0x00F6D4A7+2250711]
+                	GetHandleVerifier [0x00DC718B+521403]
+                	GetHandleVerifier [0x00DC6229+517465]
+                	Ordinal0 [0x00CDB79D+2078621]
+                	Ordinal0 [0x00CDFB58+2095960]
+                	Ordinal0 [0x00CDFC92+2096274]
+                	Ordinal0 [0x00CE9541+2135361]
+                	BaseThreadInitThunk [0x76D7FA29+25]
+                	RtlGetAppContainerNamedObjectPath [0x77577A9E+286]
+                	RtlGetAppContainerNamedObjectPath [0x77577A6E+238]
+                </stack-trace>
+            </failure>
+        </test-case>
+        <test-case start='1634132244440' status='pending' stop='1634132244441'>
+            <name>When I click on signIn button</name>
+            <title>When I click on signIn button</title>
+            <labels>
+                <label name='language' value='javascript'/>
+                <label name='framework' value='wdio'/>
+                <label name='thread' value='0-0'/>
+            </labels>
+            <parameters>
+                <parameter kind='argument' name='browser' value='chrome-94.0.4606.81'/>
+            </parameters>
+            <steps/>
+            <attachments/>
+        </test-case>
+        <test-case start='1634132244441' status='pending' stop='1634132244442'>
+            <name>When I provide personal details to create a new account from &lt;testdatapath></name>
+            <title>When I provide personal details to create a new account from &lt;testdatapath></title>
+            <labels>
+                <label name='language' value='javascript'/>
+                <label name='framework' value='wdio'/>
+                <label name='thread' value='0-0'/>
+            </labels>
+            <parameters>
+                <parameter kind='argument' name='browser' value='chrome-94.0.4606.81'/>
+            </parameters>
+            <steps/>
+            <attachments/>
+        </test-case>
+        <test-case start='1634132244442' status='pending' stop='1634132244442'>
+            <name>Then Correct name and surname are displayed on My Account page</name>
+            <title>Then Correct name and surname are displayed on My Account page</title>
+            <labels>
+                <label name='language' value='javascript'/>
+                <label name='framework' value='wdio'/>
+                <label name='thread' value='0-0'/>
+            </labels>
+            <parameters>
+                <parameter kind='argument' name='browser' value='chrome-94.0.4606.81'/>
+            </parameters>
+            <steps/>
+            <attachments/>
+        </test-case>
+        <test-case start='1634132244442' status='passed' stop='1634132244444'>
+            <name></name>
+            <title></title>
+            <labels>
+                <label name='language' value='javascript'/>
+                <label name='framework' value='wdio'/>
+                <label name='thread' value='0-0'/>
+            </labels>
+            <parameters>
+                <parameter kind='argument' name='browser' value='chrome-94.0.4606.81'/>
+            </parameters>
+            <steps/>
+            <attachments/>
+        </test-case>
+    </test-cases>
+</ns2:test-suite>

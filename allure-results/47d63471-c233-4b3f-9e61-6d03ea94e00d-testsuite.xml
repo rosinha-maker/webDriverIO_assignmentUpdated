@@ -1,0 +1,139 @@
+<?xml version='1.0'?>
+<ns2:test-suite xmlns:ns2='urn:model.allure.qatools.yandex.ru' start='1634146599420' stop='1634146616522'>
+    <name>Validation of Product details on Payments page after Registering on the website and Adding a product to the cart: Registering on the website</name>
+    <title>Validation of Product details on Payments page after Registering on the website and Adding a product to the cart: Registering on the website</title>
+    <test-cases>
+        <test-case start='1634146599421' status='passed' stop='1634146599424'>
+            <name></name>
+            <title></title>
+            <labels>
+                <label name='language' value='javascript'/>
+                <label name='framework' value='wdio'/>
+                <label name='thread' value='0-0'/>
+            </labels>
+            <parameters>
+                <parameter kind='argument' name='browser' value='chrome-94.0.4606.81'/>
+            </parameters>
+            <steps/>
+            <attachments/>
+        </test-case>
+        <test-case start='1634146599424' status='passed' stop='1634146612599'>
+            <name>Given I'm on the landing page</name>
+            <title>Given I'm on the landing page</title>
+            <labels>
+                <label name='language' value='javascript'/>
+                <label name='framework' value='wdio'/>
+                <label name='thread' value='0-0'/>
+            </labels>
+            <parameters>
+                <parameter kind='argument' name='browser' value='chrome-94.0.4606.81'/>
+            </parameters>
+            <steps>
+                <step start='1634146599429' status='passed' stop='1634146612436'>
+                    <name>POST /session/:sessionId/url</name>
+                    <title>POST /session/:sessionId/url</title>
+                    <attachments>
+                        <attachment title='Request' source='b46f7bd6-46dd-45e8-bf3a-40d662d4132f-attachment.json' type='application/json' size='45'/>
+                    </attachments>
+                    <steps/>
+                </step>
+                <step start='1634146612436' status='passed' stop='1634146612591'>
+                    <name>POST /session/:sessionId/window/maximize</name>
+                    <title>POST /session/:sessionId/window/maximize</title>
+                    <attachments>
+                        <attachment title='Response' source='76444a91-228a-4ed8-8362-ff20f2d102bd-attachment.json' type='application/json' size='58'/>
+                    </attachments>
+                    <steps/>
+                </step>
+            </steps>
+            <attachments/>
+        </test-case>
+        <test-case start='1634146612599' status='passed' stop='1634146616511'>
+            <name>When I click on signIn button</name>
+            <title>When I click on signIn button</title>
+            <labels>
+                <label name='language' value='javascript'/>
+                <label name='framework' value='wdio'/>
+                <label name='thread' value='0-0'/>
+            </labels>
+            <parameters>
+                <parameter kind='argument' name='browser' value='chrome-94.0.4606.81'/>
+            </parameters>
+            <steps>
+                <step start='1634146612607' status='passed' stop='1634146612643'>
+                    <name>POST /session/:sessionId/element</name>
+                    <title>POST /session/:sessionId/element</title>
+                    <attachments>
+                        <attachment title='Request' source='78819d5f-e20c-441a-8cd0-7d69d8b22a6e-attachment.json' type='application/json' size='56'/>
+                        <attachment title='Response' source='901eec1f-34e4-4f6b-bf3b-606093d813d9-attachment.json' type='application/json' size='83'/>
+                    </attachments>
+                    <steps/>
+                </step>
+                <step start='1634146612655' status='passed' stop='1634146616511'>
+                    <name>POST /session/:sessionId/element/4d242f3f-34fe-4598-bdf2-9e47f33162df/click</name>
+                    <title>POST /session/:sessionId/element/4d242f3f-34fe-4598-bdf2-9e47f33162df/click</title>
+                    <attachments/>
+                    <steps/>
+                </step>
+            </steps>
+            <attachments/>
+        </test-case>
+        <test-case start='1634146616511' status='broken' stop='1634146616519'>
+            <name>When I provide personal details to create a new account from &lt;testdatapath></name>
+            <title>When I provide personal details to create a new account from &lt;testdatapath></title>
+            <labels>
+                <label name='language' value='javascript'/>
+                <label name='framework' value='wdio'/>
+                <label name='thread' value='0-0'/>
+            </labels>
+            <parameters>
+                <parameter kind='argument' name='browser' value='chrome-94.0.4606.81'/>
+            </parameters>
+            <steps/>
+            <attachments/>
+            <failure>
+                <message>Error: ENOENT: no such file or directory, open '&lt;testdatapath>'</message>
+                <stack-trace>Error: ENOENT: no such file or directory, open '&lt;testdatapath>'
+                    at Object.openSync (fs.js:497:3)
+                    at Object.readFileSync (fs.js:393:35)
+                    at World.&lt;anonymous> (C:\WDIOTest\webDriverIO_assignment\step-definitions\testStepDef.ts:29:19)
+                    at step (C:\WDIOTest\webDriverIO_assignment\step-definitions\testStepDef.ts:33:23)
+                    at Object.next (C:\WDIOTest\webDriverIO_assignment\step-definitions\testStepDef.ts:14:53)
+                    at C:\WDIOTest\webDriverIO_assignment\step-definitions\testStepDef.ts:8:71
+                    at new Promise (&lt;anonymous>)
+                    at __awaiter (C:\WDIOTest\webDriverIO_assignment\step-definitions\testStepDef.ts:4:12)
+                    at World.&lt;anonymous> (C:\WDIOTest\webDriverIO_assignment\step-definitions\testStepDef.ts:87:12)
+                    at World.executeAsync (C:\WDIOTest\webDriverIO_assignment\node_modules\@wdio\utils\build\shim.js:323:27)
+                    at World.testFrameworkFnWrapper (C:\WDIOTest\webDriverIO_assignment\node_modules\@wdio\utils\build\test-framework\testFnWrapper.js:45:32)</stack-trace>
+            </failure>
+        </test-case>
+        <test-case start='1634146616519' status='pending' stop='1634146616520'>
+            <name>Then Correct name and surname are displayed on My Account page</name>
+            <title>Then Correct name and surname are displayed on My Account page</title>
+            <labels>
+                <label name='language' value='javascript'/>
+                <label name='framework' value='wdio'/>
+                <label name='thread' value='0-0'/>
+            </labels>
+            <parameters>
+                <parameter kind='argument' name='browser' value='chrome-94.0.4606.81'/>
+            </parameters>
+            <steps/>
+            <attachments/>
+        </test-case>
+        <test-case start='1634146616520' status='passed' stop='1634146616521'>
+            <name></name>
+            <title></title>
+            <labels>
+                <label name='language' value='javascript'/>
+                <label name='framework' value='wdio'/>
+                <label name='thread' value='0-0'/>
+            </labels>
+            <parameters>
+                <parameter kind='argument' name='browser' value='chrome-94.0.4606.81'/>
+            </parameters>
+            <steps/>
+            <attachments/>
+        </test-case>
+    </test-cases>
+</ns2:test-suite>

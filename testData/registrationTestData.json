@@ -1,0 +1,14 @@
+{
+    "email": "test15@automation2.com",
+    "firstName": "TestFirst",
+    "lastName": "TestLast",
+    "password": "Test@123",
+    "dayOfBirth": "11",
+    "monthOfBirth": "3",
+    "yearOfBirth": "1982",
+    "address1": "AddLine1",
+    "city": "CityTest",
+    "zip": "98765",
+    "state": "California",
+    "phone": "987654321"
+}
