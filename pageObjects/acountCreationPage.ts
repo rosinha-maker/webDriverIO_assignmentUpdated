@@ -1,6 +1,6 @@
 import { clickElement, selectDropdownByAttribute, setText } from "../testUtils/testUtility";
 
-class ChaiRegister {
+class AccountCreate {
     get signInBtn() { return $("//a[@class='login']"); }
     get emailField() { return $("//input[@id='email_create']"); }
     get createAccountButton() { return $("//button[@id='SubmitCreate']"); }
@@ -19,7 +19,6 @@ class ChaiRegister {
     get registerButton() { return $('#submitAccount'); }
 
     async clickSignIn() {
-        //await this.signInBtn.click()
         await clickElement(this.signInBtn)
     }
 
@@ -31,8 +30,9 @@ class ChaiRegister {
         await clickElement(this.createAccountButton)
     }
 
-    async setGender() {
-        await clickElement(this.genderRadioBtn)
+    async setGender(gender:string) {
+        //await clickElement(this.genderRadioBtn)
+        await $("//label[contains(.,'"+gender+"')]//input").click()
     }
 
     async setFirstName(fName:string){
@@ -56,26 +56,27 @@ class ChaiRegister {
     async setYearOfBirth(year:string){
         await selectDropdownByAttribute(this.selectYearOfBirth, 'value', year)
     }
-     async setAddress1(lName:string){
-        await setText(this.address1Field,lName)
+     async setAddress1(add1:string){
+        await setText(this.address1Field,add1)
     } 
-    async setCity(lName:string){
-        await setText(this.cityField,lName)
+    async setCity(city:string){
+        await setText(this.cityField,city)
     }
-    async setZip(lName:string){
-        await setText(this.zipField,lName)
-    }
-
-    async setState(lName:string){
-        await setText(this.stateSelect,lName)
+    async setZip(zip:string){
+        await setText(this.zipField,zip)
     }
 
-    async setPhone(lName:string){
-        await setText(this.phoneField,lName)
+    async setState(state:string){
+        //await setText(this.stateSelect,lName)
+        await $("//select[@id='id_state']//option[text()='"+state+"']").click()
     }
 
-    async clickRegisterBtn(lName:string){
-        await setText(this.registerButton,lName)
+    async setPhone(phone:string){
+        await setText(this.phoneField,phone)
+    }
+
+    async clickRegisterBtn(){
+        await clickElement(this.registerButton)
     }
 
 
@@ -84,4 +85,4 @@ class ChaiRegister {
 
 
 }
-export default new ChaiRegister()
+export default new AccountCreate()

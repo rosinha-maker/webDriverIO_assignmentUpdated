@@ -7,6 +7,8 @@
             "expect-webdriverio"
         ],
         "target": "ES5",
-        "resolveJsonModule": true
+        "resolveJsonModule": true,
+       "esModuleInterop": true
+
     }
 }
